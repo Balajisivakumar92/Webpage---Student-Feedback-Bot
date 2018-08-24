@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<title>feedback form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+var dep = document.getElementByName("department")[0].value;
+if (dep.value == --select--) {
+    alert("Please say me which department!!"); 
+}
+var year = document.getElementByName("Which Year")[0].value;
+if(year.value == --select--){
+	alert("Please say me which year!!");
+}
+var sem = document.getElementByName("Semester")
+if(sem.value == --select--) {
+		alert("Please say me which Semester!!")
+function conf()
+{
+alert("THANKYOU FOR YOUR FEEDBACK!");
+}
+
+</script>
+</head>
+<body>
+	<div class = "Feedback-title">
+		<h1>Students Feedback Bot</h1>
+		<h2>FEEL FREE TO SHARE WITH US REGARDING YOUR problems..!!</h2>
+	</div>
+	
+	
+	<div class="Feedback-form" >
+	
+		<form id="Feedback-form" method="post" action="" >
+			<table style="width: 700px; border: 0;" cellpadding="20" cellspacing="0">
+			<tr> <td colspan="5">
+			</td> </tr>
+			<tr> <td style="width:50%">
+			<label for="department">Department:</label><br />
+			<select name="department"class="form-control" required="required">
+			<option value="">--select--</option>
+			<option value="Department of Electronics and Communication Engineering">Department of Electronics and Communication Engineering</option>
+			<option value="Department of Computer Science Engineering">Department of Computer Science Engineering</option>
+			<option value="Department of Information Technology">Department of Information Technology</option>
+			<option value="Department of Electrical and Computer Science Engineering">Department of Electrical and Computer Science Engineering</option>
+			<option value="Department of Electrical and Electronics Engineering">Department of Electrical and Electronics Engineering</option>
+			<option value="Department of Mechanical Engineering">Department of Mechanical Engineering</option>
+			<option value="Department of Civil Engineering">Department of Civil Engineering</option>
+			<option value="Department of Bio - Medical Engineering">Department of Bio - Medical Engineering</option>
+			<option value="Department of Energy and Environmental Engineering">Department of Energy and Environmental Engineering</option>
+			<option value="Department of Automobile Engineering">Department of Automobile Engineering</option>
+			<option value="Department of Bio-Technology">Department of Bio-Technology</option>
+			<option value="Department of Agricultural Engineering">Department of Agricultural Engineering</option>
+			</select>
+			</td> <td style="width:50%">
+			<label for="Which Year">Which Year?</label><br />
+			<select name="year"class="form-control"  required="required">
+			<option value="">--select--</option>
+			<option value="1st year">1st year</option>
+			<option value="2nd year">2nd year</option>
+			<option value="3rd year">3rd year</option>
+			<option value="4th year">4th year</option>
+			</select>
+			</td> <td style="width:50%">
+			<label for="Semester" >Semester?</label><br />
+			<select name="semester"class="form-control"  required="required">
+			<option value="">--select--</option>
+			<option value="1st year">1st semester</option>
+			<option value="2nd year">2nd semester</option>
+			<option value="3rd year">3rd semester</option>
+			<option value="4th year">4th semester</option>
+			<option value="3rd year">5th semester</option>
+			<option value="4th year">6th semester</option>
+			<option value="3rd year">7th semester</option>
+			<option value="4th year">8th semester</option>
+			</select>
+			</td>
+			
+			<tr>
+			<th><label for="WhatDistinguishes">How staffs teaching in class? </label></th>
+			<th><label for="WhatDistinguishes">Give feedback about course-content?</label></th> 
+			<th><label for="WhatDistinguishes">Give feedback about examinations?</label></th>
+			</tr>
+			<tr>
+			<td><textarea name="WhatDistinguishes" rows="7" cols="40" style="width: 590px;" class="row" required="required"></textarea></td>
+			<td><textarea name="WhatDistinguishes" rows="7" cols="40" style="width: 590px;" class="row" required="required"></textarea></td>
+			<td><textarea name="WhatDistinguishes" rows="7" cols="40" style="width: 590px;" class="row" required="required"></textarea></td>
+			</tr>
+			<tr>
+			<th><label for="WhatDistinguishes">Give feedback about lab-work?</label></th>
+			<th><label for="WhatDistinguishes">Give feedback about extracurricular?</label></th>
+			<th><label for="WhatDistinguishes">Give feedback about library_facilities?</label></th> 
+			</tr>
+			<tr>
+			<td><textarea name="WhatDistinguishes" rows="7" cols="40" style="width: 590px;" class="row" required="required"></textarea></td>
+			<td><textarea name="WhatDistinguishes" rows="7" cols="40" style="width: 590px;" class="row" required="required"></textarea></td>
+			<td><textarea name="WhatDistinguishes" rows="7" cols="40" style="width: 590px;" class="row" required="required"></textarea></td>
+			</tr>
+			
+			</table>
+			<center>
+			<input type="submit" class="form-control submit" value="CLICK ME IF YOU COMPLETED YOUR FEEDBACK" onClick="conf()">
+			</center>
+			
+		</form>
+	
+	</div>
+	
+</body> 
+</html>
